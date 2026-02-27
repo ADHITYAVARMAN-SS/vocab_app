@@ -9,7 +9,7 @@ import streamlit as st
 @st.cache_data
 def load_data():
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-    file_path = os.path.join(BASE_DIR, "..", "data", "filename.csv")
+    file_path = os.path.join(BASE_DIR, "..", "data", "TOEFL_Vocab.csv")
     file_path = os.path.abspath(file_path)
 
     df = pd.read_csv(file_path)
